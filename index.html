@@ -14,7 +14,11 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
-
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
@@ -22,7 +26,18 @@
 
   <body>
     <!-- HEADER -->
-    <header></header>
+    <header class="c-header">
+      <span class="c-header__title">IMCovid</span>
+      <nav class="c-header__buttons">
+        <a href="#" class="c-header__button">
+          <span class="material-icons-round"> calculate </span>
+        </a>
+
+        <a href="#" class="c-header__button">
+          <span class="material-icons-round"> table_chart </span>
+        </a>
+      </nav>
+    </header>
 
     <!-- MAIN CONTENT -->
     <main></main>
@@ -30,8 +45,6 @@
     <!-- FOOTER -->
     <footer></footer>
 
-    <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

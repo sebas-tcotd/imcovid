@@ -16,9 +16,9 @@
   --apple: #53c653;
   --bright-navy-blue: #2680d9;
   --tigers-eye: #e28c36;
-  --chinese-wealthy: hsla(218, 24, 9, 0.87);
-  --chinese-aether: hsla(218, 24, 9, 0.5);
-  --chinese-ghost: hsla(218, 24, 9, 0.15);
+  --chinese-wealthy: hsla(218, 24%, 9%, 0.87);
+  --chinese-aether: hsla(218, 24%, 9%, 0.5);
+  --chinese-ghost: hsla(218, 24%, 9%, 0.15);
 }
 
 /*------------------------------------*\
@@ -58,4 +58,17 @@
   --state-success: var(--apple);
   --state-danger: var(--tigers-eye);
   --state-error: var(--venetian-red);
+}
+
+/*------------------------------------*\
+  #SPACING-VARIABLES
+\*------------------------------------*/
+:root {
+  /** For its use as rem mainly */
+  --space-8: 0.5;
+  --space-16: 1;
+  --space-24: 1.5;
+  --space-32: 2;
+  --space-48: 3;
+  --space-64: 4;
 }
