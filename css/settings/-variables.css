@@ -1,0 +1,61 @@
+/*------------------------------------*\
+  #PRIMITIVES-VARIABLES
+\*------------------------------------*/
+:root {
+  --anti-flash-white: #f0eff4;
+  --floral-white: #fcf6f3;
+  --azureish-white: #d7e4f9;
+  --chinese-black: #11151c;
+  --celtic-blue: #226ce0;
+  --yale-blue: #13428b;
+  --aero: #7da9ed;
+  --tumbleweed: #d99f7e;
+  --chestnut: #92502b;
+  --champagne-pink: #f0d9cc;
+  --venetian-red: #cc3333;
+  --apple: #53c653;
+  --bright-navy-blue: #2680d9;
+  --tigers-eye: #e28c36;
+  --chinese-wealthy: hsla(218, 24, 9, 0.87);
+  --chinese-aether: hsla(218, 24, 9, 0.5);
+  --chinese-ghost: hsla(218, 24, 9, 0.15);
+}
+
+/*------------------------------------*\
+  #SEMANTIC-VARIABLES
+\*------------------------------------*/
+:root {
+  /** Background */
+  --neutral-background: var(--anti-flash-white);
+  --primary-background: var(--azureish-white);
+  --secondary-background: var(--floral-white);
+  --dark-background: var(--chinese-black);
+
+  /** Primary colors */
+  --primary-color: var(--celtic-blue);
+  --primary-light: var(--aero);
+  --primary-dark: var(--yale-blue);
+
+  /** Primary gradient colors */
+  --primary-color-grad: linear-gradient(
+    180deg,
+    var(--aero) 0%,
+    var(--celtic-blue) 100%
+  );
+
+  /** Secondary colors */
+  --secondary-color: var(--tumbleweed);
+  --secondary-light: var(--champagne-pink);
+  --secondary-dark: var(--chestnut);
+
+  /** Light text colors */
+  --text-normal: var(--chinese-wealthy);
+  --text-mid: var(--chinese-aether);
+  --text-desactivated: var(--chinese-ghost);
+
+  /** State colors */
+  --state-info: var(--bright-navy-blue);
+  --state-success: var(--apple);
+  --state-danger: var(--tigers-eye);
+  --state-error: var(--venetian-red);
+}
