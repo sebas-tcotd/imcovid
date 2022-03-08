@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  #FOOTER-COMPONENT
+\*------------------------------------*/
+
+.c-footer {
+  align-items: center;
+  background-color: var(--primary-dark);
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
+  margin-top: calc(var(--space-48) * 1rem);
+}
+
+.c-footer__text {
+  color: var(--text-white);
+  font-size: 0.688rem;
+  line-height: 0.875rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
