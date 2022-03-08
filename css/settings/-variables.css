@@ -37,7 +37,7 @@
   --primary-dark: var(--yale-blue);
 
   /** Primary gradient colors */
-  --primary-color-grad: linear-gradient(
+  --primary-gradient: linear-gradient(
     180deg,
     var(--aero) 0%,
     var(--celtic-blue) 100%
@@ -52,6 +52,9 @@
   --text-normal: var(--chinese-wealthy);
   --text-mid: var(--chinese-aether);
   --text-desactivated: var(--chinese-ghost);
+
+  /** Dark text colors */
+  --text-white: var(--anti-flash-white);
 
   /** State colors */
   --state-info: var(--bright-navy-blue);

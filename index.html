@@ -14,7 +14,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
@@ -40,10 +40,66 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main></main>
+    <main class="o-container c-main">
+      <section class="c-intro">
+        <h1 class="c-intro__title">Calculadora IMC</h1>
+        <p class="c-intro__description">
+          Ingrese sus medidas y determinaremos si está en riesgo de contraer
+          COVID en base a su índice de masa corporal.
+        </p>
+      </section>
+
+      <section>
+        <h2>Medidas</h2>
+        <form class="c-form" action="">
+          <fieldset class="c-form__section">
+            <div class="c-form__control">
+              <label for="height">Estatura (en centímetros)</label>
+              <input
+                type="number"
+                name="height"
+                min="0"
+                max="220"
+                placeholder="162 cm"
+              />
+            </div>
+
+            <div class="c-form__control">
+              <label for="height">Tu peso (en kilogramos)</label>
+              <input
+                type="number"
+                name="weight"
+                min="0"
+                max="220"
+                placeholder="50 kg"
+              />
+            </div>
+          </fieldset>
+
+          <div class="c-form__buttons">
+            <button
+              class="o-button c-form__button--tertiary"
+              type="reset"
+              value="Reiniciar"
+            >
+              Reiniciar
+            </button>
+            <button
+              class="o-button c-form__button--primary"
+              type="submit"
+              value="Calcular"
+            >
+              Calcular
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="c-footer">
+      <small class="c-footer__text">Made with love by ||S||</small>
+    </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

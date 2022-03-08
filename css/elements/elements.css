@@ -3,8 +3,18 @@
    ========================================================================== */
 
 html {
-  font-size: 1em;
-  line-height: 1.4;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*
@@ -79,6 +89,10 @@ body {
   font-family: var(--font-body);
 }
 
+main {
+  padding-top: calc(var(--space-48) * 1rem);
+}
+
 h1,
 h2,
 h3,
@@ -86,4 +100,24 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+}
+
+p {
+  font-size: calc(var(--size-16) * 1rem);
+  line-height: 30px;
+}
+
+label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+
+input {
+  background-color: var(--neutral-background);
+  border: 1px solid rgba(17, 21, 28, 0.15);
+  border-radius: 8px;
+  box-shadow: inset 0px 2px 8px rgba(17, 21, 28, 0.15);
+  padding: 0.5rem;
+  height: calc(var(--space-48) * 1rem);
 }
