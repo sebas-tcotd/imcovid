@@ -13,21 +13,55 @@
   flex-direction: column;
   gap: calc(var(--space-32) * 1rem);
 }
+@media only screen and (min-width: 768px) {
+  .c-form__section {
+    flex-direction: row;
+  }
+}
 
 .c-form__control {
   display: flex;
   flex-direction: column;
   gap: 1.375rem;
 }
+@media only screen and (min-width: 768px) {
+  .c-form__control {
+    flex: 1 1 auto;
+  }
+}
 
 .c-form__buttons {
   display: flex;
+  flex-direction: column-reverse;
   gap: calc(var(--space-16) * 1rem);
   justify-content: space-between;
+}
+@media only screen and (min-width: 360px) {
+  .c-form__buttons {
+    flex-direction: row;
+    gap: calc(var(--space-16) * 1rem);
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .c-form__buttons {
+    gap: calc(var(--space-32) * 1rem);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .c-form__buttons {
+    gap: calc(var(--space-16) * 1rem);
+    justify-content: flex-end;
+  }
 }
 
 .c-form__buttons * {
   flex: 1 1 auto;
+}
+@media only screen and (min-width: 1024px) {
+  .c-form__buttons * {
+    flex: unset;
+  }
 }
 
 .c-form__button--primary {
