@@ -130,3 +130,7 @@ input {
 input:active {
   border: 1px solid var(--state-info);
 }
+
+abbr[title] {
+  text-decoration: none;
+}
