@@ -102,6 +102,11 @@ h6 {
   font-family: var(--font-heading);
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 p {
   font-size: calc(var(--size-16) * 1rem);
   line-height: 30px;
@@ -120,4 +125,8 @@ input {
   box-shadow: inset 0px 2px 8px rgba(17, 21, 28, 0.15);
   padding: 0.5rem;
   height: calc(var(--space-48) * 1rem);
+}
+
+input:active {
+  border: 1px solid var(--state-info);
 }

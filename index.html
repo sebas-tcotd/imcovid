@@ -41,7 +41,7 @@
 
     <!-- MAIN CONTENT -->
     <main class="o-container c-main">
-      <section class="c-intro">
+      <section id="intro" class="c-intro">
         <h1 class="c-intro__title">Calculadora IMC</h1>
         <p class="c-intro__description">
           Ingrese sus medidas y determinaremos si está en riesgo de contraer
@@ -49,7 +49,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="measurements-form">
         <h2>Medidas</h2>
         <form class="c-form" action="">
           <fieldset class="c-form__section">
@@ -92,11 +92,55 @@
               class="o-button c-form__button--primary"
               type="submit"
               value="Calcular"
+              onclick="doTheCalc(event)"
             >
               Calcular
             </button>
           </div>
         </form>
+      </section>
+
+      <section id="results-intro" hidden>
+        <h1>
+          Riesgo <span id="risk-level" class="u-uppercase">indefinido</span>
+        </h1>
+
+        <p id="risk-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat
+          explicabo sequi nemo, perferendis velit mollitia delectus veritatis
+          non, molestiae optio tempore corrupti nulla quam deleniti fuga iusto?
+          Cumque, et.
+        </p>
+      </section>
+      <section id="results-details" class="c-imc-results" hidden>
+        <h2>Sus resultados</h2>
+
+        <div class="o-cards">
+          <div class="c-card">
+            <h5 class="c-card__title">Índice de masa corporal</h5>
+            <span id="imc" class="c-card__data">NaN</span>
+          </div>
+
+          <div class="c-card">
+            <h5 class="c-card__title">Clasificación</h5>
+            <span id="imc-classification" class="c-card__data">undefined</span>
+          </div>
+        </div>
+
+        <small class="c-imc-results__avg"
+          >El promedio de peruanos tiene un <a href="#">IMC de 25.8</a>.</small
+        >
+
+        <button
+          class="o-button c-form__button--primary c-imc-results__button"
+          onclick="resetPage()"
+        >
+          Calcular nuevamente
+        </button>
+      </section>
+
+      <section>
+        <h2></h2>
       </section>
     </main>
 

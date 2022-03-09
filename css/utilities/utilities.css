@@ -79,3 +79,24 @@
 .clearfix::after {
   clear: both;
 }
+
+.u-danger {
+  color: var(--state-error);
+}
+
+.u-warning {
+  color: var(--state-danger);
+}
+
+.u-ok {
+  color: var(--state-success);
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+#results-intro h1 {
+  font-weight: 300;
+  text-align: center;
+}

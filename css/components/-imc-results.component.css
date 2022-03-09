@@ -1,0 +1,17 @@
+.c-imc-results {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-24) * 1rem);
+}
+
+.c-imc-results__avg {
+  text-align: center;
+  align-self: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .c-imc-results__button {
+    width: 37%;
+    align-self: flex-end;
+  }
+}
